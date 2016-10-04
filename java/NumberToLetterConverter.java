@@ -14,7 +14,7 @@ public abstract class CantLetras {
             "ONCE ", "DOCE ", "TRECE ", "CATORCE ", "QUINCE ", "DIECISEIS",
             "DIECISIETE", "DIECIOCHO", "DIECINUEVE", "VEINTE" };
 
-    private static final String[] DECENAS = { "VENTI", "TREINTA ", "CUARENTA ",
+    private static final String[] DECENAS = { "VEINTI", "TREINTA ", "CUARENTA ",
             "CINCUENTA ", "SESENTA ", "SETENTA ", "OCHENTA ", "NOVENTA ",
             "CIEN " };
 
@@ -66,7 +66,7 @@ public abstract class CantLetras {
         if (doubleNumber < 0)
             throw new NumberFormatException("El numero debe ser positivo");
 
-        String splitNumber[] = String.valueOf(doubleNumber).replace('.', '#')
+        String splitNumber[] = formatedDouble.replace('.', '#')
                 .split("#");
 
         // Descompone el trio de millones
